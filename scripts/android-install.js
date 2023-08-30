@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 module.exports = function (context) {
-    var path        = context.requireCordovaModule('path'),
-        fs          = context.requireCordovaModule('fs'),
-        shell       = context.requireCordovaModule('shelljs'),
+    var path        = require('path'),
+        fs          = require('fs'),
+        shell       = require('shelljs'),
         projectRoot = context.opts.projectRoot,
         plugins     = context.opts.plugins || [];
 
